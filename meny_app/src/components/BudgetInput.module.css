@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.label {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--border);
+    color: var(--text-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    padding-bottom: 0.5rem;
+}
+
+.input:focus {
+    border-bottom-color: var(--primary);
+}
+
+.currency {
+    font-size: 2rem;
+    color: var(--text-muted);
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+/* Hide spinner on number input */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
